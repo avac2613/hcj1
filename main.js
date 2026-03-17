@@ -16,6 +16,17 @@ function reset() {
   document.body.style.backgroundColor = 'linen'
 }
 
+function randomRgbColor() {
+  const r = Math.floor(Math.random() * 256) // 0-255
+  const g = Math.floor(Math.random() * 256) // 0-255
+  const b = Math.floor(Math.random() * 256) // 0-255
+  return `rgb(${r}, ${g}, ${b})`
+}
+
+function random() {
+  document.body.style.backgroundColor = randomRgbColor()
+}
+
 function showhtml() {
   document.getElementById('fig').src = 'image/html.png'
   document.getElementById('desc').innerHTML =
